@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>SavoRain | Music Vault & Beat Catalog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <script src="header.js"></script>
 </head>
 <body oncontextmenu="return false;">
@@ -16,8 +16,8 @@
         
         <!-- HERO / ACTION BUTTONS -->
         <section class="hero-section">
-            <button id="openGuideBtn" class="glow-button">Leasing / Purchase Guide</button>
-            <button id="openCustomBtn" class="glow-button">Custom Instrumentals</button>
+            <button id="openGuideBtn" class="glow-button">Catalog Licensing Guide</button>
+            <button id="openCustomBtn" class="glow-button">Custom Production & Sync</button>
         </section>
 
         <!-- GENRE SHORT SAMPLES SECTION -->
@@ -387,13 +387,13 @@
         <p>&copy; 2026 SavoRain. All rights reserved.</p>
     </footer>
 
-    <!-- MODAL: LEASING & PURCHASE GUIDE -->
+    <!-- MODAL 1: CATALOG LEASING & COMMERCIAL RIGHTS GUIDE -->
     <div id="guideModal" class="modal-overlay">
         <div class="modal-card">
             <div class="modal-header">
                 <div>
-                    <h2>SavoRain Customer License Agreement</h2>
-                    <p class="modal-subtitle">Instrumental Pricing Reference -</p>
+                    <h2>SavoRain Licensing & Rights Guide</h2>
+                    <p class="modal-subtitle">Artist Streaming & Commercial Sync Tiers</p>
                 </div>
                 <button class="modal-close-btn" onclick="closeGuideModal()">&times;</button>
             </div>
@@ -402,42 +402,36 @@
                 <table class="reference-table">
                     <thead>
                         <tr>
-                            <th>Tier</th>
-                            <th>Price</th>
+                            <th>License Tier</th>
+                            <th>Pricing</th>
                             <th>Deliverables</th>
-                            <th>Streams/Limits</th>
+                            <th>Artist Streams & Commercial Terms</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><strong>Basic Lease</strong></td>
-                            <td>$30–$100</td>
-                            <td>High Quality Audio File (wav)</td>
-                            <td>Up to 50,000 streams</td>
+                            <td>$35–$60</td>
+                            <td>Master WAV (24-bit)</td>
+                            <td>Up to 50,000 music streams <strong>OR</strong> 1 monetized video/podcast episode (non-exclusive).</td>
                         </tr>
                         <tr>
                             <td><strong>Advanced Lease</strong></td>
                             <td>$150–$250</td>
-                            <td>High Quality Audio File (wav)</td>
-                            <td>Up to 250,000 streams</td>
+                            <td>Master WAV (24-bit)</td>
+                            <td>Up to 250,000 music streams <strong>OR</strong> commercial social media ads, 1 indie game, or short film release.</td>
                         </tr>
                         <tr>
-                            <td><strong>Trackout/Stems</strong></td>
-                            <td>(Additional $50)</td>
-                            <td>Stem Tracks</td>
-                            <td>Up to 500,000 streams</td>
+                            <td><strong>Trackout / Stems</strong></td>
+                            <td>$250–$350</td>
+                            <td>Master WAV + Trackout Stems</td>
+                            <td>Up to 500,000 streams. Multi-platform commercial campaigns and precise vocal mixing with individual track stems.</td>
                         </tr>
                         <tr>
                             <td><strong>Exclusive Rights</strong></td>
-                            <td>$300–$1,000+</td>
-                            <td>All Files + Ownership</td>
-                            <td>Full Master Ownership</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Special</strong></td>
-                            <td>Negotiation</td>
-                            <td>All Files + Ownership</td>
-                            <td>Full Master Ownership</td>
+                            <td>$500–$1,000+</td>
+                            <td>Full Package + Stems + Contract</td>
+                            <td><strong>Full Master Ownership & Buyout.</strong> Unlimited streams, worldwide commercial broadcast/sync. Beat permanently removed from catalog.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -445,13 +439,13 @@
         </div>
     </div>
 
-    <!-- MODAL: CUSTOM INSTRUMENTALS -->
+    <!-- MODAL 2: BESPOKE PRODUCTION & COMMERCIAL AUDIO SERVICES -->
     <div id="customModal" class="modal-overlay">
         <div class="modal-card">
             <div class="modal-header">
                 <div>
-                    <h2>Custom Instrumentals</h2>
-                    <p class="modal-subtitle">Instrumental Pricing Reference -</p>
+                    <h2>Custom Audio & Production Services</h2>
+                    <p class="modal-subtitle">Tailored Scoring, Game Audio, & Bespoke Compositions</p>
                 </div>
                 <button class="modal-close-btn" onclick="closeCustomModal()">&times;</button>
             </div>
@@ -460,26 +454,31 @@
                 <table class="reference-table">
                     <thead>
                         <tr>
-                            <th>Option</th>
-                            <th>Pricing / Rate</th>
-                            <th>Details & Deliverables</th>
+                            <th>Service Package</th>
+                            <th>Pricing / Rates</th>
+                            <th>Deliverables & Project Scope</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Hourly Pricing</strong></td>
-                            <td>$40/hr</td>
-                            <td>Live session (Pay based on exact minutes)</td>
+                            <td><strong>Commercial & Video Sync Scoring</strong></td>
+                            <td>$75–$150 / spot</td>
+                            <td>15s, 30s, or 60s custom audio beds composed and synchronized to visual cuts. Mastered to standard commercial loudness specs (-14 LUFS). Includes 2 revision passes.</td>
                         </tr>
                         <tr>
-                            <td><strong>Track Pricing</strong></td>
-                            <td>$10/track</td>
-                            <td>Free file delivery and full ownership</td>
+                            <td><strong>Game & App Audio Suite</strong></td>
+                            <td>$100–$200 / pack</td>
+                            <td>Sample-accurate seamless loopable music (title/gameplay themes) plus 5–10 matched UI and feedback sound effects (WAV/OGG engine-ready).</td>
                         </tr>
                         <tr>
-                            <td><strong>Negotiation</strong></td>
-                            <td>Custom Fee</td>
-                            <td>Regular pricing with custom fee</td>
+                            <td><strong>Custom Artist Instrumental</strong></td>
+                            <td>$150–$250 / track</td>
+                            <td>Original composition built from scratch to your vocal range, tempo, and sonic vision. Includes Master WAV, trackout stems, and exclusive artist distribution rights.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Live Collaborative Studio Session</strong></td>
+                            <td>$40 / hour</td>
+                            <td>1-on-1 virtual production or sound design session via Discord or Zoom. Real-time arrangement and sound tailoring billed to the exact minute.</td>
                         </tr>
                     </tbody>
                 </table>
