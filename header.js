@@ -10,14 +10,6 @@ class SiteHeader extends HTMLElement {
         <header class="header">
             <div class="header-top">
                 <a href="index.html" class="logo">SavoRain</a>
-
-               <nav class="nav-center">
-                   <a href="./" class="nav-item ${activePage === 'overview' ? 'active' : ''}">Overview</a>
-                   <a href="music" class="nav-item ${activePage === 'music' ? 'active' : ''}">Music</a>
-                   <span class="nav-item disabled" title="Coming Soon">Audio</span>
-                   <span class="nav-item disabled" title="Coming Soon">Design</span>
-                   <span class="nav-item disabled" title="Coming Soon">Creative</span>
-               </nav>
                
                 <div class="header-right">
                     <a href="mailto:savorainmusic@gmail.com" class="nav-contact">savorainmusic@gmail.com</a>
