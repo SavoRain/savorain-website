@@ -964,3 +964,47 @@ input:checked + .slider:before {
 .glow-button:active {
     transform: translateY(0);
 }
+
+/* =============================================================
+   DISABLED NAV ITEMS & SERVICE CARDS (COMING SOON)
+   ============================================================= */
+
+/* Header Nav Pills Disabled */
+.nav-item.disabled {
+    opacity: 0.35;
+    color: var(--text-muted);
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    border: 1px solid transparent;
+}
+
+/* Service Cards Disabled */
+.service-card.disabled {
+    opacity: 0.38 !important;
+    filter: grayscale(1) brightness(0.7) !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+    user-select: none !important;
+    border-color: rgba(255, 255, 255, 0.05) !important;
+    box-shadow: none !important;
+    background: rgba(18, 25, 36, 0.45) !important;
+}
+
+.service-card.disabled:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.service-card.disabled .service-action-hint {
+    color: var(--text-muted) !important;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.service-card.disabled .service-icon-wrap {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border-color: rgba(255, 255, 255, 0.04) !important;
+    color: var(--text-muted) !important;
+}
