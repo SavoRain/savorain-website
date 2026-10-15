@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>SavoRain | Music Vault & Beat Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body oncontextmenu="return false;">
+
+    <!-- TOP UNIVERSAL NAVIGATION -->
+    <header class="header">
+        <div class="header-top">
+            <a href="index.html" class="logo">SavoRain</a>
+            <div class="header-right">
+                <a href="mailto:savorainmusic@gmail.com" class="nav-contact">savorainmusic@gmail.com</a>
+                
+                <!-- Instagram Link -->
+                <a href="https://instagram.com/savorainmusic" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+
+                <!-- TikTok Link -->
+                <a href="https://tiktok.com/@savorainmusic" target="_blank" rel="noopener noreferrer" class="social-link" title="TikTok">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Universal Navigation Bar -->
+        <nav class="nav-center">
+            <a href="index.html" class="nav-item">Overview</a>
+            <a href="music.html" class="nav-item active">Music</a>
+            <a href="audio.html" class="nav-item">Audio</a>
+            <a href="design.html" class="nav-item">Design</a>
+            <a href="creative.html" class="nav-item">Creative</a>
+        </nav>
+    </header>
+
+    <main class="main-wrapper">
+        
+        <!-- HERO / ACTION BUTTONS -->
+        <section class="hero-section">
+            <button id="openGuideBtn" class="glow-button">Leasing / Purchase Guide</button>
+            <button id="openCustomBtn" class="glow-button">Custom Instrumentals</button>
+        </section>
+
+        <!-- GENRE SHORT SAMPLES SECTION -->
+        <section class="genre-samples-section">
+            <div class="section-header">
+                <h2 class="section-heading">Genre Short Samples</h2>
+                <p class="section-subheading">Versatile instrumental production</p>
+            </div>
+
+            <!-- 6 Interactive Capsule Audio Triggers -->
+            <div class="genre-capsules-grid">
+                <!-- Capsule 1: Hip-Hop -->
+                <button class="genre-capsule stream-btn" data-audio-src="https://www.dropbox.com/scl/fi/YOUR_LINK_HERE/hiphop-sample.wav?raw=1" onclick="toggleStream(this)">
+                    <span class="capsule-genre">Hip-Hop</span>
+                    <span class="capsule-trigger">
+                        <span class="icon">▶</span> <span class="label">Preview</span>
+                    </span>
+                </button>
+
+                <!-- Capsule 2: Trap -->
+                <button class="genre-capsule stream-btn" data-audio-src="https://www.dropbox.com/scl/fi/YOUR_LINK_HERE/trap-sample.wav?raw=1" onclick="toggleStream(this)">
+                    <span class="capsule-genre">Trap</span>
+                    <span class="capsule-trigger">
+                        <span class="icon">▶</span> <span class="label">Preview</span>
+                    </span>
+                </button>
+
+                <!-- Capsule 3: Chip-Hop -->
+                <button class="genre-capsule stream-btn" data-audio-src="https://www.dropbox.com/scl/fi/YOUR_LINK_HERE/chiphop-sample.wav?raw=1" onclick="toggleStream(this)">
+                    <span class="capsule-genre">Chip-Hop</span>
+                    <span class="capsule-trigger">
+                        <span class="icon">▶</span> <span class="label">Preview</span>
+                    </span>
+                </button>
+
+                <!-- Capsule 4: R&B / Soul -->
+                <button class="genre-capsule stream-btn" data-audio-src="https://www.dropbox.com/scl/fi/YOUR_LINK_HERE/rnb-sample.wav?raw=1" onclick="toggleStream(this)">
+                    <span class="capsule-genre">R&B / Soul</span>
+                    <span class="capsule-trigger">
+                        <span class="icon">▶</span> <span class="label">Preview</span>
+                    </span>
+                </button>
+
+                <!-- Capsule 5: Rage -->
+                <button class="genre-capsule stream-btn" data-audio-src="https://www.dropbox.com/scl/fi/YOUR_LINK_HERE/rage-sample.wav?raw=1" onclick="toggleStream(this)">
+                    <span class="capsule-genre">Rage</span>
+                    <span class="capsule-trigger">
+                        <span class="icon">▶</span> <span class="label">Preview</span>
+                    </span>
+                </button>
+
+                <!-- Capsule 6: Disco / Classic -->
+                <button class="genre-capsule stream-btn" data-audio-src="https://www.dropbox.com/scl/fi/YOUR_LINK_HERE/disco-sample.wav?raw=1" onclick="toggleStream(this)">
+                    <span class="capsule-genre">Disco / Classic</span>
+                    <span class="capsule-trigger">
+                        <span class="icon">▶</span> <span class="label">Preview</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <!-- CONTROLS: DYNAMIC FILTER BAR -->
+        <section class="filter-controls-container" id="filterContainer">
+            <div class="filters-card">
+                
+                <!-- Dynamic Collection Dropdown -->
+                <div class="filter-group" id="collectionFilterGroup">
+                    <label>Collection</label>
+                    <select id="collectionFilter" onchange="applyFilters()">
+                        <option value="all">All Collections</option>
+                    </select>
+                </div>
+
+                <!-- Dynamic Genre Dropdown -->
+                <div class="filter-group" id="genreFilterGroup">
+                    <label>Genre</label>
+                    <select id="genreFilter" onchange="applyFilters()">
+                        <option value="all">All Genres</option>
+                    </select>
+                </div>
+
+                <!-- Dynamic Style Dropdown -->
+                <div class="filter-group" id="styleFilterGroup">
+                    <label>Style</label>
+                    <select id="styleFilter" onchange="applyFilters()">
+                        <option value="all">All Styles</option>
+                    </select>
+                </div>
+
+                <!-- Sort Control -->
+                <div class="filter-group">
+                    <label>Sort By Length</label>
+                    <select id="lengthSort" onchange="applyFilters()">
+                        <option value="default">Default Order</option>
+                        <option value="shortest">Shortest First</option>
+                        <option value="longest">Longest First</option>
+                    </select>
+                </div>
+
+                <!-- Toggle Sold Beats -->
+                <div class="filter-group toggle-group">
+                    <label>Show Sold Beats</label>
+                    <label class="switch">
+                        <input type="checkbox" id="soldToggle" checked onchange="applyFilters()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <!-- Toggle Sample Beats -->
+                <div class="filter-group toggle-group">
+                    <label>Show Samples</label>
+                    <label class="switch">
+                        <input type="checkbox" id="sampleToggle" checked onchange="applyFilters()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TAB NAVIGATION -->
+        <section class="catalog-section">
+            <div class="tabs-nav">
+                <button class="tab-button active" onclick="switchTab('instrumentals', this)">Instrumentals</button>
+                <button class="tab-button" onclick="switchTab('loops', this)">Loops</button>
+            </div>
+
+            <!-- TAB CONTAINER: INSTRUMENTALS -->
+            <div id="tab-instrumentals" class="tab-content active">
+                <div class="table-responsive">
+                    <table class="catalog-table" id="instrumentalsTable">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Audio Preview</th>
+                                <th>Time</th>
+                                <th>BPM</th>
+                                <th>Genre</th>
+                                <th>Style</th>
+                                <th>Collection</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="instrumentalsBody">
+                            
+                            <tr data-title="Lucky" 
+                                data-audio="https://www.dropbox.com/scl/fi/eav63390loqo9enyeuj1r/Lucky.wav?rlkey=hifkgz8ngyy41f5bo6beff8b4&st=a484vijh&raw=1" 
+                                data-seconds="149" 
+                                data-bpm="186" 
+                                data-genre="Hip-Hop" 
+                                data-style="Chill" 
+                                data-collection="null" 
+                                data-status="available"></tr>
+
+                            <tr data-title="Logos" 
+                                data-audio="https://www.dropbox.com/scl/fi/fyou6zg394t4320ybkr6v/Logos.wav?rlkey=fl9237bhv1c7f55jfmnbjtrjz&st=dsu1pbbx&raw=1" 
+                                data-seconds="183" 
+                                data-bpm="157" 
+                                data-genre="Hip-Hop" 
+                                data-style="Misc" 
+                                data-collection="NewGen" 
+                                data-status="available"></tr>
+                            
+                            <tr data-title="Young" 
+                                data-audio="https://www.dropbox.com/scl/fi/5r494pwn6581gurpuijet/Young.wav?rlkey=kk7yvhejywt6cofz5n5ts8uv1&st=elzus6cp&raw=1" 
+                                data-seconds="194" 
+                                data-bpm="136" 
+                                data-genre="Hip-Hop" 
+                                data-style="Flow" 
+                                data-collection="NewGen" 
+                                data-status="available"></tr>
+
+                            <tr data-title="Chop Block" 
+                                data-audio="https://www.dropbox.com/scl/fi/i3i7h18wtwbbi3lnwkvui/Chop.wav?rlkey=wrl5auhi2ywglt1uviasu9377&st=h13muol9&raw=1" 
+                                data-seconds="206" 
+                                data-bpm="113" 
+                                data-genre="Hip-Hop" 
+                                data-style="Abstract" 
+                                data-collection="Clockwork" 
+                                data-status="special"></tr>
+                            
+                            <tr data-title="Craft" 
+                                data-audio="https://www.dropbox.com/scl/fi/sl4ocmsfrvbd9qyo3kb2c/Craft.wav?rlkey=rae4jiqpnab1t415jk9u82syu&st=4j9zt8i7&raw=1" 
+                                data-seconds="185" 
+                                data-bpm="124" 
+                                data-genre="Hip-Hop" 
+                                data-style="Hard" 
+                                data-collection="Knockers" 
+                                data-status="available"></tr>
+                            
+                            <tr data-title="Garden" 
+                                data-audio="https://www.dropbox.com/scl/fi/to20z8o0nlcrr1q21e2gw/Garden.wav?rlkey=e1ryyvy7bmbi0hhqmgo4k7uvy&st=k0rsyxe9&raw=1" 
+                                data-seconds="182" 
+                                data-bpm="136" 
+                                data-genre="Chip-Hop" 
+                                data-style="Flow, Upbeat" 
+                                data-collection="Morning Dew" 
+                                data-status="available"></tr>
+                            
+                            <tr data-title="Graze" 
+                                data-audio="https://www.dropbox.com/scl/fi/32qr735imhxiby11f3y1e/Graze.wav?rlkey=h2oa8zxuuu48p8ag6vohc1tcl&st=2sv5gwqs&raw=1" 
+                                data-seconds="132" 
+                                data-bpm="84" 
+                                data-genre="Chip-Hop" 
+                                data-style="Chill, Upbeat" 
+                                data-collection="Morning Dew" 
+                                data-status="available"></tr>
+
+                            <tr data-title="Flashback" 
+                                data-audio="https://www.dropbox.com/scl/fi/83djixw4oqr5lgki2dwvl/Flashback.wav?rlkey=bw5pqkxywww2ewva6xox8jjxo&st=uy121kan&raw=1" 
+                                data-seconds="226" 
+                                data-bpm="146" 
+                                data-genre="Reggae-Hop" 
+                                data-style="Ethereal, Chill" 
+                                data-collection="Extra Terrestrial" 
+                                data-status="special"></tr>
+                            
+                            <tr data-title="Boomer" 
+                                data-audio="https://www.dropbox.com/scl/fi/53o3hz5ibwf6zav437zxu/Boomer.wav?rlkey=0v9ls8wvo4ywsnsm8i0l55bdd&st=zafcbcvt&raw=1" 
+                                data-seconds="161" 
+                                data-bpm="155" 
+                                data-genre="Hip-Hop" 
+                                data-style="Flow, Simple" 
+                                data-collection="null" 
+                                data-status="available"></tr>
+
+                            <tr data-title="I wish I met you sooner" 
+                                data-audio="https://www.dropbox.com/scl/fi/bykx8n4ps2fj1t8z3olik/I-wish-I-met-you-sooner.wav?rlkey=5vey6vjmz1d7rf8tnavz73r4x&st=s783hd37&raw=1" 
+                                data-seconds="240" 
+                                data-bpm="128" 
+                                data-genre="Alternative" 
+                                data-style="Ethereal" 
+                                data-collection="Extra Terrestrial" 
+                                data-status="sample"></tr>
+                            
+                            <tr data-title="Boon" 
+                                data-audio="https://www.dropbox.com/scl/fi/b5e0vs9zpcycchqb4egbn/Boon.wav?rlkey=zv4o8sgfb3qfo5ryrbw4xjjld&st=042xx9oe&raw=1" 
+                                data-seconds="215" 
+                                data-bpm="158" 
+                                data-genre="Hip-Hop" 
+                                data-style="Upbeat" 
+                                data-collection="Castles" 
+                                data-status="available"></tr>
+                            
+                            <tr data-title="Pier" 
+                                data-audio="https://www.dropbox.com/scl/fi/1lmp48u8l4yssdzkze2pd/Pier.wav?rlkey=3e6sf6oo2h0qj4v8lokx7ao3q&st=8c25n2v5&raw=1" 
+                                data-seconds="131" 
+                                data-bpm="118" 
+                                data-genre="R&B, Soul" 
+                                data-style="Somber, Simple" 
+                                data-collection="Board Walk" 
+                                data-status="available"></tr>
+                            
+                            <tr data-title="Eighties" 
+                                data-audio="https://www.dropbox.com/scl/fi/oxuiu9w6gkjgqtrq2kc20/80s.wav?rlkey=m8vhypwj8aaewk8k9v6ffua8s&st=tn853x6f&raw=1" 
+                                data-seconds="149" 
+                                data-bpm="112" 
+                                data-genre="Disco, Classic" 
+                                data-style="Simple" 
+                                data-collection="Classic Grooves" 
+                                data-status="available"></tr>
+                            
+                            <tr data-title="Scavenger" 
+                                data-audio="https://www.dropbox.com/scl/fi/kfgkfck8esv52tr1brmrz/Scavenger.wav?rlkey=ocj5mzqkl829cg4hw4xrpjk0t&st=khhgrk31&raw=1" 
+                                data-seconds="189" 
+                                data-bpm="132" 
+                                data-genre="Hip-Hop" 
+                                data-style="Hard" 
+                                data-collection="Knockers" 
+                                data-status="available"></tr>
+
+                            <tr data-title="Quandale" 
+                                data-audio="https://www.dropbox.com/scl/fi/2y8dhg0ex9lk0xq6owgkp/Quandale.wav?rlkey=4j14ejpc197i5ugx0mefd5bc9&st=s5ld3iw6&raw=1" 
+                                data-seconds="157" 
+                                data-bpm="134" 
+                                data-genre="Hip-Hop" 
+                                data-style="Piano, Tuff" 
+                                data-collection="Knockers" 
+                                data-status="available"></tr>
+                            
+                            <tr data-title="Shimmer" 
+                                data-audio="https://www.dropbox.com/scl/fi/6n8gz8toju5ftfeonotnf/Shimmer.wav?rlkey=ipi3oc1p5dk4c34aj3xk5z02d&st=10h9qpjz&raw=1" 
+                                data-seconds="133" 
+                                data-bpm="158" 
+                                data-genre="Hip-Hop" 
+                                data-style="Upbeat, Flow" 
+                                data-collection="Morning Dew" 
+                                data-status="available"></tr>
+                            
+                            <tr data-title="Simplify" 
+                                data-audio="https://www.dropbox.com/scl/fi/yck5dqxvhyv8uhmi7ze1u/Simplify.wav?rlkey=cesjad2qlhvr4s66sn2zdl6js&st=1fdipzq0&raw=1" 
+                                data-seconds="180" 
+                                data-bpm="128" 
+                                data-genre="Hip-Hop" 
+                                data-style="Misc" 
+                                data-collection="Castles" 
+                                data-status="available"></tr>
+
+                            <tr data-title="Scope" 
+                                data-audio="https://www.dropbox.com/scl/fi/axsqinuzdj1ps3v0ec9co/Scope.wav?rlkey=2khnb20fo0pxh4mh3iao8sa2x&st=1pv6rfef&raw=1" 
+                                data-seconds="274" 
+                                data-bpm="84" 
+                                data-genre="Hip-Hop" 
+                                data-style="Flow, Hard" 
+                                data-collection="Runners" 
+                                data-status="available"></tr>
+
+                            <tr data-title="True!" 
+                                data-audio="https://www.dropbox.com/scl/fi/r5qhn3ojbkz1hk5uyhxhm/True.wav?rlkey=fjqaiuak8z2woqeupwup3pall&st=bvr0wgzt&raw=1" 
+                                data-seconds="202" 
+                                data-bpm="152" 
+                                data-genre="Hip-Hop" 
+                                data-style="Flow" 
+                                data-collection="NewGen" 
+                                data-status="available"></tr>
+
+                            <tr data-title="Cure Me" 
+                                data-audio="https://www.dropbox.com/scl/fi/qymv4vt3lbv745a5ymgmz/Cure-Me.wav?rlkey=zbdnt0siaq3wkrd7nvmdkmcp6&st=o6g63387&raw=1" 
+                                data-seconds="170" 
+                                data-bpm="152" 
+                                data-genre="Hip-Hop" 
+                                data-style="Chill" 
+                                data-collection="Clockwork" 
+                                data-status="available"></tr>
+
+                            <tr data-title="SUBLIMA" 
+                                data-audio="https://www.dropbox.com/scl/fi/pg8nlfczcliiylnp1d51r/SUBLIMA.wav?rlkey=d70exg33wlmkomeiegma17c6d&st=iaqwm9mx&raw=1" 
+                                data-seconds="131" 
+                                data-bpm="117" 
+                                data-genre="Funk (Latin)" 
+                                data-style="Hard, Club" 
+                                data-collection="null" 
+                                data-status="sample"></tr>
+
+                            <tr data-title="Swear" 
+                                data-audio="https://www.dropbox.com/scl/fi/oc20l99cmrmkmvp4k8l91/Swear.wav?rlkey=xc783lg07z95fwamzhsrgas8p&st=0xtw66kq&raw=1" 
+                                data-seconds="170" 
+                                data-bpm="152" 
+                                data-genre="Hip-Hop" 
+                                data-style="Chill" 
+                                data-collection="Clockwork" 
+                                data-status="available"></tr>
+
+                            <tr data-title="Wish" 
+                                data-audio="https://www.dropbox.com/scl/fi/vnucdwn8gfcf9u4vht267/Wish.wav?rlkey=18f46c9ckwaymvj5q8lc2eo6b&st=qlzr1p9r&raw=1" 
+                                data-seconds="160" 
+                                data-bpm="156" 
+                                data-genre="Rage, Hip-Hop" 
+                                data-style="Hard" 
+                                data-collection="Deep Pit" 
+                                data-status="available"></tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TAB CONTAINER: LOOPS -->
+            <div id="tab-loops" class="tab-content">
+                <div class="empty-state">
+                    <p>Nothing here yet</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 SavoRain. All rights reserved.</p>
+    </footer>
+
+    <!-- MODAL: LEASING & PURCHASE GUIDE -->
+    <div id="guideModal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div>
+                    <h2>SavoRain Customer License Agreement</h2>
+                    <p class="modal-subtitle">Instrumental Pricing Reference -</p>
+                </div>
+                <button class="modal-close-btn" onclick="closeGuideModal()">&times;</button>
+            </div>
+            
+            <div class="table-responsive modal-table-wrap">
+                <table class="reference-table">
+                    <thead>
+                        <tr>
+                            <th>Tier</th>
+                            <th>Price</th>
+                            <th>Deliverables</th>
+                            <th>Streams/Limits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Basic Lease</strong></td>
+                            <td>$30–$100</td>
+                            <td>High Quality Audio File (wav)</td>
+                            <td>Up to 50,000 streams</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Advanced Lease</strong></td>
+                            <td>$150–$250</td>
+                            <td>High Quality Audio File (wav)</td>
+                            <td>Up to 250,000 streams</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Trackout/Stems</strong></td>
+                            <td>(Additional $50)</td>
+                            <td>Stem Tracks</td>
+                            <td>Up to 500,000 streams</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Exclusive Rights</strong></td>
+                            <td>$300–$1,000+</td>
+                            <td>All Files + Ownership</td>
+                            <td>Full Master Ownership</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Special</strong></td>
+                            <td>Negotiation</td>
+                            <td>All Files + Ownership</td>
+                            <td>Full Master Ownership</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: CUSTOM INSTRUMENTALS -->
+    <div id="customModal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div>
+                    <h2>Custom Instrumentals</h2>
+                    <p class="modal-subtitle">Instrumental Pricing Reference -</p>
+                </div>
+                <button class="modal-close-btn" onclick="closeCustomModal()">&times;</button>
+            </div>
+            
+            <div class="table-responsive modal-table-wrap">
+                <table class="reference-table">
+                    <thead>
+                        <tr>
+                            <th>Option</th>
+                            <th>Pricing / Rate</th>
+                            <th>Details & Deliverables</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Hourly Pricing</strong></td>
+                            <td>$40/hr</td>
+                            <td>Live session (Pay based on exact minutes)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Track Pricing</strong></td>
+                            <td>$10/track</td>
+                            <td>Free file delivery and full ownership</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Negotiation</strong></td>
+                            <td>Custom Fee</td>
+                            <td>Regular pricing with custom fee</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: INQUIRY POPUP -->
+    <div id="inquiryModal" class="modal-overlay">
+        <div class="modal-card compact">
+            <div class="modal-header">
+                <h3 id="inquiryTrackTitle">Inquire About Instrumental</h3>
+                <button class="modal-close-btn" onclick="closeInquiryModal()">&times;</button>
+            </div>
+            <div class="modal-body-content">
+                <p>Please email <a href="mailto:savorainmusic@gmail.com" class="inquiry-link">savorainmusic@gmail.com</a> or direct message <a href="https://instagram.com/savorainmusic" target="_blank" class="inquiry-link">@savorainmusic</a> on Instagram or <a href="https://tiktok.com/@savorainmusic" target="_blank" class="inquiry-link">TikTok</a> to discuss leasing or purchase.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT CONTROLLERS -->
+    <script>
+        /* -------------------------------------------------------------
+           1. HELPER: COMMA-SEPARATED LABELS GENERATOR
+        ------------------------------------------------------------- */
+        function formatBadgeLabels(rawString) {
+            if (!rawString || rawString.trim() === '' || rawString === 'null') return '—';
+            const items = rawString.split(',').map(item => item.trim()).filter(Boolean);
+            if (items.length === 0) return '—';
+            return items.map(val => `<span class="tag">${val}</span>`).join(', ');
+        }
+
+        /* -------------------------------------------------------------
+           2. AUTO-POPULATE ROWS & DYNAMIC DROPDOWNS
+        ------------------------------------------------------------- */
+        function populateCatalogRows() {
+            const rows = document.querySelectorAll('#instrumentalsBody tr');
+            const genreSet = new Set();
+            const styleSet = new Set();
+            const collectionSet = new Set();
+
+            rows.forEach(row => {
+                const title = row.getAttribute('data-title') || 'Untitled';
+                const audioSrc = row.getAttribute('data-audio') || '';
+                const totalSeconds = parseInt(row.getAttribute('data-seconds') || '0', 10);
+                const bpm = row.getAttribute('data-bpm') || '—';
+                const genreRaw = row.getAttribute('data-genre') || '';
+                const styleRaw = row.getAttribute('data-style') || '';
+                const collection = row.getAttribute('data-collection');
+                const status = (row.getAttribute('data-status') || 'available').toLowerCase();
+
+                if (genreRaw) {
+                    genreRaw.split(',').map(g => g.trim()).filter(Boolean).forEach(g => genreSet.add(g));
+                }
+
+                if (styleRaw) {
+                    styleRaw.split(',').map(s => s.trim()).filter(Boolean).forEach(s => styleSet.add(s));
+                }
+
+                if (collection && collection !== 'null' && collection.trim() !== '') {
+                    collectionSet.add(collection.trim());
+                }
+
+                const minutes = Math.floor(totalSeconds / 60);
+                const remainingSeconds = totalSeconds % 60;
+                const formattedTime = `[${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}]`;
+
+                const hasCollection = collection && collection !== 'null' && collection.trim() !== '';
+                const collectionDisplay = hasCollection ? collection : '—';
+
+                let statusBadge = '';
+                let actionButton = '';
+
+                if (status === 'available') {
+                    statusBadge = '<span class="badge available">Available</span>';
+                    actionButton = `<button class="action-btn inquire" onclick="openInquiryModal('${title.replace(/'/g, "\\'")}')">Inquire</button>`;
+                } else if (status === 'special') {
+                    statusBadge = '<span class="badge special">Special</span>';
+                    actionButton = `<button class="action-btn inquire" onclick="openInquiryModal('${title.replace(/'/g, "\\'")}')">Inquire</button>`;
+                } else if (status === 'sample') {
+                    statusBadge = '<span class="badge sample">Sample</span>';
+                    actionButton = '<span class="sold-text">Not For Sale</span>';
+                } else if (status === 'exclusive-sold' || status === 'sold') {
+                    statusBadge = '<span class="badge sold">Exclusive Sold</span>';
+                    actionButton = '<button class="action-btn sold" disabled>Sold Out</button>';
+                } else {
+                    statusBadge = `<span class="badge available">${status}</span>`;
+                    actionButton = `<button class="action-btn inquire" onclick="openInquiryModal('${title.replace(/'/g, "\\'")}')">Inquire</button>`;
+                }
+
+                row.innerHTML = `
+                    <td class="title-cell">${title}</td>
+                    <td>
+                        <button class="stream-btn" data-audio-src="${audioSrc}" onclick="toggleStream(this)">
+                            <span class="icon">▶</span> <span class="label">Play</span>
+                        </button>
+                    </td>
+                    <td class="time-cell">${formattedTime}</td>
+                    <td>${bpm}</td>
+                    <td>${formatBadgeLabels(genreRaw)}</td>
+                    <td>${formatBadgeLabels(styleRaw)}</td>
+                    <td class="collection-cell">${collectionDisplay}</td>
+                    <td>${statusBadge}</td>
+                    <td>${actionButton}</td>
+                `;
+            });
+
+            // Populate Genre Dropdown
+            const genreDropdown = document.getElementById('genreFilter');
+            genreDropdown.innerHTML = '<option value="all">All Genres</option>';
+            Array.from(genreSet).sort().forEach(g => {
+                const opt = document.createElement('option');
+                opt.value = g;
+                opt.textContent = g;
+                genreDropdown.appendChild(opt);
+            });
+
+            // Populate Style Dropdown
+            const styleDropdown = document.getElementById('styleFilter');
+            const styleGroup = document.getElementById('styleFilterGroup');
+            styleDropdown.innerHTML = '<option value="all">All Styles</option>';
+            if (styleSet.size === 0) {
+                styleGroup.style.display = 'none';
+            } else {
+                styleGroup.style.display = 'flex';
+                Array.from(styleSet).sort().forEach(s => {
+                    const opt = document.createElement('option');
+                    opt.value = s;
+                    opt.textContent = s;
+                    styleDropdown.appendChild(opt);
+                });
+            }
+
+            // Populate Collection Dropdown
+            const collectionDropdown = document.getElementById('collectionFilter');
+            const collectionGroup = document.getElementById('collectionFilterGroup');
+            collectionDropdown.innerHTML = '<option value="all">All Collections</option>';
+            if (collectionSet.size === 0) {
+                collectionGroup.style.display = 'none';
+            } else {
+                collectionGroup.style.display = 'flex';
+                Array.from(collectionSet).sort().forEach(c => {
+                    const opt = document.createElement('option');
+                    opt.value = c;
+                    opt.textContent = c;
+                    collectionDropdown.appendChild(opt);
+                });
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            populateCatalogRows();
+            cacheOriginalRowOrder();
+            // Start audio pipe warming on first user tap/click anywhere
+            window.addEventListener('pointerdown', keepAudioHardwareAwake, { once: true });
+        });
+
+        /* -------------------------------------------------------------
+           3. TAB SWITCHING
+        ------------------------------------------------------------- */
+        function switchTab(tabName, clickedBtn) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+            clickedBtn.classList.add('active');
+
+            const filterContainer = document.getElementById('filterContainer');
+            if (filterContainer) {
+                filterContainer.style.display = (tabName === 'loops') ? 'none' : 'block';
+            }
+        }
+
+        /* -------------------------------------------------------------
+           4. FILTER & SORT ENGINE
+        ------------------------------------------------------------- */
+        let originalRows = [];
+
+        function cacheOriginalRowOrder() {
+            const tbody = document.getElementById('instrumentalsBody');
+            originalRows = Array.from(tbody.querySelectorAll('tr'));
+        }
+
+        function applyFilters() {
+            const selectedGenre = document.getElementById('genreFilter').value;
+            const selectedStyle = document.getElementById('styleFilter').value;
+            const selectedCollection = document.getElementById('collectionFilter').value;
+            const showSold = document.getElementById('soldToggle').checked;
+            const showSamples = document.getElementById('sampleToggle').checked;
+            const lengthSort = document.getElementById('lengthSort').value;
+            const tbody = document.getElementById('instrumentalsBody');
+
+            let rows = [...originalRows];
+
+            rows.forEach(row => {
+                const genreRaw = row.getAttribute('data-genre') || '';
+                const rowGenres = genreRaw.split(',').map(g => g.trim()).filter(Boolean);
+                
+                const styleRaw = row.getAttribute('data-style') || '';
+                const rowStyles = styleRaw.split(',').map(s => s.trim()).filter(Boolean);
+
+                const rowCol = row.getAttribute('data-collection');
+                const rowStatus = (row.getAttribute('data-status') || '').toLowerCase();
+
+                let matchesGenre = (selectedGenre === 'all' || rowGenres.includes(selectedGenre));
+                let matchesStyle = (selectedStyle === 'all' || rowStyles.includes(selectedStyle));
+                
+                let matchesCollection = true;
+                if (selectedCollection !== 'all') {
+                    matchesCollection = (rowCol !== null && rowCol !== 'null' && rowCol === selectedCollection);
+                }
+
+                let matchesSold = true;
+                if (!showSold && (rowStatus === 'exclusive-sold' || rowStatus === 'sold')) {
+                    matchesSold = false;
+                }
+
+                let matchesSample = true;
+                if (!showSamples && rowStatus === 'sample') {
+                    matchesSample = false;
+                }
+
+                if (matchesGenre && matchesStyle && matchesCollection && matchesSold && matchesSample) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+
+            if (lengthSort === 'shortest') {
+                rows.sort((a, b) => parseInt(a.getAttribute('data-seconds')) - parseInt(b.getAttribute('data-seconds')));
+            } else if (lengthSort === 'longest') {
+                rows.sort((a, b) => parseInt(b.getAttribute('data-seconds')) - parseInt(a.getAttribute('data-seconds')));
+            }
+
+            rows.forEach(r => tbody.appendChild(r));
+        }
+
+        /* -------------------------------------------------------------
+           5. HARDWARE-SYNCHRONIZED ZERO-CLIP AUDIO ENGINE
+           Dual-stage loader: 80ms DAC pre-buffer & continuous carrier.
+        ------------------------------------------------------------- */
+        let globalAudioPlayer = null;
+        let activeStreamButton = null;
+        let activeLoadToken = 0;
+        let hardwareAudioContext = null;
+
+        // Keeps Bluetooth audio sink (A2DP) permanently unmuted & awake
+        function keepAudioHardwareAwake() {
+            try {
+                const AudioCtx = window.AudioContext || window.webkitAudioContext;
+                if (!hardwareAudioContext && AudioCtx) {
+                    hardwareAudioContext = new AudioCtx();
+                    const silentGain = hardwareAudioContext.createGain();
+                    silentGain.gain.value = 0.00001; 
+
+                    const osc = hardwareAudioContext.createOscillator();
+                    osc.connect(silentGain);
+                    silentGain.connect(hardwareAudioContext.destination);
+                    osc.start();
+                }
+                if (hardwareAudioContext && hardwareAudioContext.state === 'suspended') {
+                    hardwareAudioContext.resume();
+                }
+            } catch (e) {
+                // AudioContext fallback
+            }
+        }
+
+        function toggleStream(button) {
+            keepAudioHardwareAwake();
+
+            const audioUrl = button.getAttribute('data-audio-src');
+
+            // Case 1: Stop currently playing track or cancel loading track
+            if (activeStreamButton === button) {
+                stopCurrentTrack();
+                return;
+            }
+
+            // Case 2: Clean up previous track before starting new one
+            if (activeStreamButton) {
+                stopCurrentTrack();
+            }
+
+            // Case 3: Staged load
+            activeStreamButton = button;
+            button.classList.add('loading');
+            button.querySelector('.icon').textContent = '◌';
+            button.querySelector('.label').textContent = 'Loading...';
+
+            const currentToken = ++activeLoadToken;
+
+            const player = new Audio();
+            player.preload = "auto";
+            player.src = audioUrl;
+            globalAudioPlayer = player;
+
+            let stageStarted = false;
+
+            const onPlayerReady = () => {
+                if (stageStarted || currentToken !== activeLoadToken) return;
+                stageStarted = true;
+
+                player.currentTime = 0;
+
+                setTimeout(() => {
+                    if (currentToken !== activeLoadToken) return;
+
+                    player.play().then(() => {
+                        if (currentToken !== activeLoadToken) {
+                            player.pause();
+                            return;
+                        }
+                        button.classList.remove('loading');
+                        button.classList.add('playing');
+                        button.querySelector('.icon').textContent = '■';
+                        button.querySelector('.label').textContent = 'Stop';
+                    }).catch(err => {
+                        if (err.name !== 'AbortError' && currentToken === activeLoadToken) {
+                            console.error("Playback error:", err);
+                            stopCurrentTrack();
+                            alert("Audio stream could not load. Verify your direct audio link.");
+                        }
+                    });
+                }, 80);
+            };
+
+            player.addEventListener('canplay', onPlayerReady, { once: true });
+            player.addEventListener('canplaythrough', onPlayerReady, { once: true });
+
+            if (player.readyState >= 3) {
+                onPlayerReady();
+            }
+
+            player.addEventListener('ended', () => {
+                if (currentToken === activeLoadToken) {
+                    stopCurrentTrack();
+                }
+            });
+        }
+
+        function stopCurrentTrack() {
+            activeLoadToken++;
+
+            if (globalAudioPlayer) {
+                globalAudioPlayer.pause();
+                globalAudioPlayer.removeAttribute('src');
+                globalAudioPlayer.load();
+                globalAudioPlayer = null;
+            }
+
+            if (activeStreamButton) {
+                const isCapsule = activeStreamButton.classList.contains('genre-capsule');
+                activeStreamButton.classList.remove('playing');
+                activeStreamButton.classList.remove('loading');
+                activeStreamButton.querySelector('.icon').textContent = '▶';
+                activeStreamButton.querySelector('.label').textContent = isCapsule ? 'Preview' : 'Play';
+                activeStreamButton = null;
+            }
+        }
+
+        /* -------------------------------------------------------------
+           6. MODAL CONTROLS
+        ------------------------------------------------------------- */
+        const guideModal = document.getElementById('guideModal');
+        const customModal = document.getElementById('customModal');
+        const inquiryModal = document.getElementById('inquiryModal');
+
+        document.getElementById('openGuideBtn').addEventListener('click', () => {
+            guideModal.classList.add('active');
+        });
+
+        function closeGuideModal() {
+            guideModal.classList.remove('active');
+        }
+
+        document.getElementById('openCustomBtn').addEventListener('click', () => {
+            customModal.classList.add('active');
+        });
+
+        function closeCustomModal() {
+            customModal.classList.remove('active');
+        }
+
+        function openInquiryModal(trackTitle) {
+            document.getElementById('inquiryTrackTitle').textContent = `Inquire: ${trackTitle}`;
+            inquiryModal.classList.add('active');
+        }
+
+        function closeInquiryModal() {
+            inquiryModal.classList.remove('active');
+        }
+
+        window.addEventListener('click', (e) => {
+            if (e.target === guideModal) closeGuideModal();
+            if (e.target === customModal) closeCustomModal();
+            if (e.target === inquiryModal) closeInquiryModal();
+        });
+
+        /* -------------------------------------------------------------
+           7. ANTI-THEFT & DEVTOOLS DETERRENTS
+        ------------------------------------------------------------- */
+        document.addEventListener('keydown', (e) => {
+            if (e.keyCode === 123 || 
+               (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) || 
+               (e.ctrlKey && e.keyCode === 85)) { 
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
