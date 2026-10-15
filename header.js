@@ -29,8 +29,8 @@ class SiteHeader extends HTMLElement {
             </div>
 
             <nav class="nav-center">
-                <a href="index.html" class="nav-item ${activePage === 'overview' ? 'active' : ''}">Overview</a>
-                <a href="music.html" class="nav-item ${activePage === 'music' ? 'active' : ''}">Music</a>
+                <a href="./" class="nav-item ${activePage === 'overview' ? 'active' : ''}">Overview</a>
+                <a href="music" class="nav-item ${activePage === 'music' ? 'active' : ''}">Music</a>
                 <span class="nav-item disabled" title="Coming Soon">Audio</span>
                 <span class="nav-item disabled" title="Coming Soon">Design</span>
                 <span class="nav-item disabled" title="Coming Soon">Creative</span>
